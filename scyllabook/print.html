@@ -1867,8 +1867,7 @@ let session: Session = SessionBuilder::new()
 </span></code></pre></pre>
 <h1 id="token-aware-round-robin"><a class="header" href="#token-aware-round-robin">Token aware Round robin</a></h1>
 <p>This policy will try to calculate a token to find replica nodes in which queried data is stored.<br />
-After finding the replicas it performs a round robin on them.<br />
-If this fails then falls back to round robin on the other nodes.</p>
+After finding the replicas it performs a round robin on them.</p>
 <h3 id="example-2"><a class="header" href="#example-2">Example</a></h3>
 <p>To use this policy in <code>Session</code>:</p>
 <pre><pre class="playground"><code class="language-rust edition2018">
@@ -1896,8 +1895,7 @@ let session: Session = SessionBuilder::new()
 </span></code></pre></pre>
 <h1 id="token-aware-dc-aware-round-robin"><a class="header" href="#token-aware-dc-aware-round-robin">Token aware DC Aware Round robin</a></h1>
 <p>This policy will try to calculate a token to find replica nodes in which queried data is stored.<br />
-After finding the replicas it chooses the ones from the local datacenter and performs a round robin on them.<br />
-If this fails then falls back to round robin on the other nodes.</p>
+After finding the replicas it chooses the ones from the local datacenter and performs a round robin on them.</p>
 <h3 id="example-3"><a class="header" href="#example-3">Example</a></h3>
 <p>To use this policy in <code>Session</code>:</p>
 <pre><pre class="playground"><code class="language-rust edition2018">
