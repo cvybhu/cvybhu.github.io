@@ -183,7 +183,7 @@ The driver supports this by allowing to create a custom struct with derived func
 </span><span class="boring">async fn check_only_compiles(session: &amp;Session) -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
 </span>use scylla::IntoTypedRows;
 use scylla::macros::{FromUserType, IntoUserType};
-use scylla::cql_to_rust::FromCQLVal;
+use scylla::cql_to_rust::FromCqlVal;
 
 // Define custom struct that matches User Defined Type created earlier
 // wrapping field in Option will gracefully handle null field values

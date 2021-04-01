@@ -180,11 +180,11 @@ After finding the replicas it chooses the ones from the local datacenter and per
 </span><span class="boring">use std::error::Error;
 </span><span class="boring">async fn check_only_compiles() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
 </span>use scylla::{Session, SessionBuilder};
-use scylla::transport::load_balancing::{DCAwareRoundRobinPolicy, TokenAwarePolicy};
+use scylla::transport::load_balancing::{DcAwareRoundRobinPolicy, TokenAwarePolicy};
 use std::sync::Arc;
 
 let local_dc: String = &quot;us_east&quot;.to_string();
-let dc_robin = Box::new(DCAwareRoundRobinPolicy::new(local_dc));
+let dc_robin = Box::new(DcAwareRoundRobinPolicy::new(local_dc));
 let policy = Arc::new(TokenAwarePolicy::new(dc_robin));
 
 let session: Session = SessionBuilder::new()

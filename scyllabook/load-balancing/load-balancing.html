@@ -173,7 +173,7 @@ Load balancing can be configured for the whole <code>Session</code> during creat
 <p>Basic load balancing strategies:</p>
 <ul>
 <li><code>RoundRobinPolicy</code> - uses all known nodes one after another</li>
-<li><code>DCAwareRoundRobinPolicy</code> - uses all known nodes from the local datacenter one after another</li>
+<li><code>DcAwareRoundRobinPolicy</code> - uses all known nodes from the local datacenter one after another</li>
 </ul>
 <p>Each of these basic load balancing strategies can be wrapped in <code>TokenAwarePolicy</code> to enable token awareness.</p>
 <blockquote>

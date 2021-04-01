@@ -187,14 +187,14 @@ If no nodes from the local datacenter are available it will fall back to other n
 </span><span class="boring">use std::error::Error;
 </span><span class="boring">async fn check_only_compiles() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
 </span>use scylla::{Session, SessionBuilder};
-use scylla::transport::load_balancing::DCAwareRoundRobinPolicy;
+use scylla::transport::load_balancing::DcAwareRoundRobinPolicy;
 use std::sync::Arc;
 
 let local_dc_name: String = &quot;us_east&quot;.to_string();
 
 let session: Session = SessionBuilder::new()
     .known_node(&quot;127.0.0.1:9042&quot;)
-    .load_balancing(Arc::new(DCAwareRoundRobinPolicy::new(local_dc_name)))
+    .load_balancing(Arc::new(DcAwareRoundRobinPolicy::new(local_dc_name)))
     .build()
     .await?;
 <span class="boring">Ok(())
