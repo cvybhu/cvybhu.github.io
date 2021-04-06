@@ -168,7 +168,71 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="tls"><a class="header" href="#tls">TLS</a></h1>
-<p>TLS support is still in development, see pull request <a href="https://github.com/scylladb/scylla-rust-driver/pull/191">#191</a></p>
+<p>Driver uses the <a href="https://github.com/sfackler/rust-openssl"><code>openssl</code></a> crate for TLS functionality.<br />
+It was chosen because <a href="https://github.com/ctz/rustls"><code>rustls</code></a> doesn't support certificates for ip addresses
+(see <a href="https://github.com/briansmith/webpki/issues/54">issue</a>), which is a common use case for Scylla.</p>
+<h3 id="enabling-feature"><a class="header" href="#enabling-feature">Enabling feature</a></h3>
+<p><code>openssl</code> is not a pure Rust library so you need enable a feature and install the proper package.</p>
+<p>To enable the <code>tls</code> feature add in <code>Cargo.toml</code>:</p>
+<pre><code class="language-toml">scylla = { git = &quot;https://github.com/...&quot;, branch = &quot;main&quot;, features = [&quot;ssl&quot;] }
+openssl = &quot;0.10.32&quot;
+</code></pre>
+<p>Then install the package with <code>openssl</code>:</p>
+<ul>
+<li>Debian/Ubuntu: 
+<pre><code class="language-bash">apt install libssl-dev pkg-config
+</code></pre>
+</li>
+<li>Fedora:
+<pre><code class="language-bash">dnf install openssl-devel
+</code></pre>
+</li>
+</ul>
+<!-- 
+ scylla-rust-driver doesn't build on Alpine, some strange cc linker errors in proc-macro-hack 0_o
+ TODO: try building and add the section
+
+ * Alpine:
+    ```bash
+    apk add openssl-dev
+    ```
+-->
+<ul>
+<li>Arch:
+<pre><code class="language-bash">pacman -S openssl pkg-config
+</code></pre>
+</li>
+</ul>
+<h3 id="using-tls"><a class="header" href="#using-tls">Using TLS</a></h3>
+<p>To use tls you will have to create an openssl 
+<a href="https://docs.rs/openssl/0.10.33/openssl/ssl/struct.SslContext.html"><code>SslContext</code></a>
+and pass it to <code>SessionBuilder</code></p>
+<p>For example, if database certificate is in the file <code>ca.crt</code>:</p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">extern crate openssl;
+</span>use scylla::{Session, SessionBuilder};
+use openssl::ssl::{SslContextBuilder, SslMethod, SslVerifyMode};
+use std::path::PathBuf;
+
+<span class="boring">use std::error::Error;
+</span><span class="boring">async fn check_only_compiles() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>let mut context_builder = SslContextBuilder::new(SslMethod::tls())?;
+context_builder.set_ca_file(&quot;ca.crt&quot;)?;
+context_builder.set_verify(SslVerifyMode::PEER);
+
+let session: Session = SessionBuilder::new()
+    .known_node(&quot;127.0.0.1:9142&quot;) // The the port is now 9142
+    .ssl_context(Some(context_builder.build()))
+    .build()
+    .await?;
+
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
 
                     </main>
 
