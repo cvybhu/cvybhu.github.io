@@ -168,7 +168,27 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
-<p>Authentication is still in development, see pull request <a href="https://github.com/scylladb/scylla-rust-driver/pull/177">#177</a></p>
+<p>Driver supports authentication by username and password.</p>
+<p>To specify credentials use the <code>user</code> method in <code>SessionBuilder</code>:</p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">extern crate tokio;
+</span><span class="boring">use std::error::Error;
+</span><span class="boring">async fn check_only_compiles() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>use scylla::{Session, SessionBuilder};
+
+let session: Session = SessionBuilder::new()
+    .known_node(&quot;127.0.0.1:9042&quot;)
+    .user(&quot;myusername&quot;, &quot;mypassword&quot;)
+    .build()
+    .await?;
+
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
 
                     </main>
 

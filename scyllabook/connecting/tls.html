@@ -174,7 +174,7 @@ It was chosen because <a href="https://github.com/ctz/rustls"><code>rustls</code
 <h3 id="enabling-feature"><a class="header" href="#enabling-feature">Enabling feature</a></h3>
 <p><code>openssl</code> is not a pure Rust library so you need enable a feature and install the proper package.</p>
 <p>To enable the <code>tls</code> feature add in <code>Cargo.toml</code>:</p>
-<pre><code class="language-toml">scylla = { git = &quot;https://github.com/...&quot;, branch = &quot;main&quot;, features = [&quot;ssl&quot;] }
+<pre><code class="language-toml">scylla = { version = &quot;0.1.0&quot;, features = [&quot;ssl&quot;] }
 openssl = &quot;0.10.32&quot;
 </code></pre>
 <p>Then install the package with <code>openssl</code>:</p>

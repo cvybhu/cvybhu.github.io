@@ -173,7 +173,7 @@
 </code></pre>
 <p>In <code>Cargo.toml</code> add useful dependencies:</p>
 <pre><code class="language-toml">[dependencies]
-scylla = { git = &quot;https://github.com/scylladb/scylla-rust-driver&quot;, branch = &quot;main&quot; }
+scylla = &quot;0.1.0&quot;
 tokio = { version = &quot;1.1.0&quot;, features = [&quot;full&quot;] }
 futures = &quot;0.3.6&quot;
 uuid = &quot;0.8.1&quot;
@@ -182,10 +182,6 @@ num-bigint = &quot;0.3&quot;
 tracing = &quot;0.1.25&quot;
 tracing-subscriber = &quot;0.2.16&quot;
 </code></pre>
-<blockquote>
-<p>Note that when specifying a dependency as a git link, updates will not be automatically pulled.
-Running <code>cargo update</code> will update the git dependency manually.</p>
-</blockquote>
 <p>In <code>main.rs</code> put:</p>
 <pre><pre class="playground"><code class="language-rust edition2018"><span class="boring">extern crate scylla;
 </span><span class="boring">extern crate tokio;

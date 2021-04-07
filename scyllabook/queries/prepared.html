@@ -236,6 +236,8 @@ session.execute(&amp;prepared, (to_insert,)).await?;
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
+<p>See <a href="https://docs.rs/scylla/0.1.0/scylla/statement/prepared_statement/struct.PreparedStatement.html">PreparedStatement API documentation</a> 
+for more options</p>
 <h3 id="performance"><a class="header" href="#performance">Performance</a></h3>
 <p>Prepared queries have good performance, much better than simple queries.<br />
 By default they use shard/token aware load balancing.</p>

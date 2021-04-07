@@ -176,7 +176,7 @@ Although optimized for Scylla, the driver is also compatible with <a href="https
 <h3 id="other-documentation"><a class="header" href="#other-documentation">Other documentation</a></h3>
 <ul>
 <li><a href="https://github.com/scylladb/scylla-rust-driver/tree/main/examples">Examples</a></li>
-<li><em>API documentation</em> (Coming soon, for now download the <a href="https://github.com/scylladb/scylla-rust-driver">repo</a> and run <code>cargo doc</code>)</li>
+<li><a href="https://docs.rs/scylla">API documentation</a></li>
 <li><a href="https://docs.scylladb.com">Scylla documentation</a></li>
 <li><a href="https://cassandra.apache.org/doc/latest/">Cassandra® documentation</a></li>
 </ul>
@@ -200,7 +200,7 @@ Although optimized for Scylla, the driver is also compatible with <a href="https
 </code></pre>
 <p>In <code>Cargo.toml</code> add useful dependencies:</p>
 <pre><code class="language-toml">[dependencies]
-scylla = { git = &quot;https://github.com/scylladb/scylla-rust-driver&quot;, branch = &quot;main&quot; }
+scylla = &quot;0.1.0&quot;
 tokio = { version = &quot;1.1.0&quot;, features = [&quot;full&quot;] }
 futures = &quot;0.3.6&quot;
 uuid = &quot;0.8.1&quot;
@@ -209,10 +209,6 @@ num-bigint = &quot;0.3&quot;
 tracing = &quot;0.1.25&quot;
 tracing-subscriber = &quot;0.2.16&quot;
 </code></pre>
-<blockquote>
-<p>Note that when specifying a dependency as a git link, updates will not be automatically pulled.
-Running <code>cargo update</code> will update the git dependency manually.</p>
-</blockquote>
 <p>In <code>main.rs</code> put:</p>
 <pre><pre class="playground"><code class="language-rust edition2018"><span class="boring">extern crate scylla;
 </span><span class="boring">extern crate tokio;
@@ -356,7 +352,27 @@ async fn main() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
 }
 </code></pre></pre>
 <h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
-<p>Authentication is still in development, see pull request <a href="https://github.com/scylladb/scylla-rust-driver/pull/177">#177</a></p>
+<p>Driver supports authentication by username and password.</p>
+<p>To specify credentials use the <code>user</code> method in <code>SessionBuilder</code>:</p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">extern crate tokio;
+</span><span class="boring">use std::error::Error;
+</span><span class="boring">async fn check_only_compiles() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>use scylla::{Session, SessionBuilder};
+
+let session: Session = SessionBuilder::new()
+    .known_node(&quot;127.0.0.1:9042&quot;)
+    .user(&quot;myusername&quot;, &quot;mypassword&quot;)
+    .build()
+    .await?;
+
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
 <h1 id="tls"><a class="header" href="#tls">TLS</a></h1>
 <p>Driver uses the <a href="https://github.com/sfackler/rust-openssl"><code>openssl</code></a> crate for TLS functionality.<br />
 It was chosen because <a href="https://github.com/ctz/rustls"><code>rustls</code></a> doesn't support certificates for ip addresses
@@ -364,7 +380,7 @@ It was chosen because <a href="https://github.com/ctz/rustls"><code>rustls</code
 <h3 id="enabling-feature"><a class="header" href="#enabling-feature">Enabling feature</a></h3>
 <p><code>openssl</code> is not a pure Rust library so you need enable a feature and install the proper package.</p>
 <p>To enable the <code>tls</code> feature add in <code>Cargo.toml</code>:</p>
-<pre><code class="language-toml">scylla = { git = &quot;https://github.com/...&quot;, branch = &quot;main&quot;, features = [&quot;ssl&quot;] }
+<pre><code class="language-toml">scylla = { version = &quot;0.1.0&quot;, features = [&quot;ssl&quot;] }
 openssl = &quot;0.10.32&quot;
 </code></pre>
 <p>Then install the package with <code>openssl</code>:</p>
@@ -504,7 +520,7 @@ session.query(my_query, (to_insert,)).await?;
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<p>See <a href="queries/">Query API documentation (TODO)</a> for more options</p>
+<p>See <a href="https://docs.rs/scylla/0.1.0/scylla/statement/query/struct.Query.html">Query API documentation</a> for more options</p>
 <h3 id="second-argument---the-values"><a class="header" href="#second-argument---the-values">Second argument - the values</a></h3>
 <p>Query text is constant, but the values might change.
 You can pass changing values to a query by specifying a list of variables as bound values.<br />
@@ -845,6 +861,8 @@ session.execute(&amp;prepared, (to_insert,)).await?;
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
+<p>See <a href="https://docs.rs/scylla/0.1.0/scylla/statement/prepared_statement/struct.PreparedStatement.html">PreparedStatement API documentation</a> 
+for more options</p>
 <h3 id="performance-1"><a class="header" href="#performance-1">Performance</a></h3>
 <p>Prepared queries have good performance, much better than simple queries.<br />
 By default they use shard/token aware load balancing.</p>
@@ -958,6 +976,8 @@ session.batch(&amp;batch, ((), )).await?;
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
+<p>See <a href="https://docs.rs/scylla/0.1.0/scylla/statement/batch/struct.Batch.html">Batch API documentation</a>
+for more options</p>
 <h3 id="batch-values"><a class="header" href="#batch-values">Batch values</a></h3>
 <p>Batch takes a tuple of values specified just like in <a href="queries/simple.html">simple</a> or <a href="queries/prepared.html">prepared</a> queries.</p>
 <p>Length of batch values must be equal to the number of statements in a batch.<br />
