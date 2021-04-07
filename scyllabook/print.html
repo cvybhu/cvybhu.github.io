@@ -1932,7 +1932,8 @@ Load balancing can be configured for the whole <code>Session</code> during creat
 <p><strong>Note</strong><br />
 Only <a href="load-balancing/../queries/prepared.html">prepared queries</a> use token aware load balancing</p>
 </blockquote>
-<p>All queries are shard aware, there is no way to turn off shard awareness.</p>
+<p>All queries are shard aware, there is no way to turn off shard awareness.<br />
+If a token is available the query is sent to the correct shard, otherwise to a random one.</p>
 <p>So, the available load balancing policies are:</p>
 <ul>
 <li><a href="load-balancing/robin.html">Round robin</a></li>
