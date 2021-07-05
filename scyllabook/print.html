@@ -4,49 +4,30 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Scylla Rust Driver</title>
-        
         <meta name="robots" content="noindex" />
-        
-        
-
-
         <!-- Custom HTML head -->
         
-
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Documentation for Scylla Rust Driver">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        
         <link rel="stylesheet" href="css/print.css" media="print">
-        
-
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="fonts/fonts.css">
-        
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
-
-        
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -97,7 +78,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="title-page.html">Scylla Rust Driver</a></li><li class="chapter-item expanded "><a href="quickstart/quickstart.html"><strong aria-hidden="true">1.</strong> Quick start</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="quickstart/create-project.html"><strong aria-hidden="true">1.1.</strong> Creating a project</a></li><li class="chapter-item expanded "><a href="quickstart/scylla-docker.html"><strong aria-hidden="true">1.2.</strong> Running Scylla using Docker</a></li><li class="chapter-item expanded "><a href="quickstart/example.html"><strong aria-hidden="true">1.3.</strong> Connecting and running a simple query</a></li></ol></li><li class="chapter-item expanded "><a href="connecting/connecting.html"><strong aria-hidden="true">2.</strong> Connecting to the cluster</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="connecting/compression.html"><strong aria-hidden="true">2.1.</strong> Compression</a></li><li class="chapter-item expanded "><a href="connecting/authentication.html"><strong aria-hidden="true">2.2.</strong> Authentication</a></li><li class="chapter-item expanded "><a href="connecting/tls.html"><strong aria-hidden="true">2.3.</strong> TLS</a></li></ol></li><li class="chapter-item expanded "><a href="queries/queries.html"><strong aria-hidden="true">3.</strong> Making queries</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="queries/simple.html"><strong aria-hidden="true">3.1.</strong> Simple query</a></li><li class="chapter-item expanded "><a href="queries/values.html"><strong aria-hidden="true">3.2.</strong> Query values</a></li><li class="chapter-item expanded "><a href="queries/result.html"><strong aria-hidden="true">3.3.</strong> Query result</a></li><li class="chapter-item expanded "><a href="queries/prepared.html"><strong aria-hidden="true">3.4.</strong> Prepared query</a></li><li class="chapter-item expanded "><a href="queries/batch.html"><strong aria-hidden="true">3.5.</strong> Batch statement</a></li><li class="chapter-item expanded "><a href="queries/paged.html"><strong aria-hidden="true">3.6.</strong> Paged query</a></li><li class="chapter-item expanded "><a href="queries/usekeyspace.html"><strong aria-hidden="true">3.7.</strong> USE keyspace</a></li></ol></li><li class="chapter-item expanded "><a href="data-types/data-types.html"><strong aria-hidden="true">4.</strong> Data Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="data-types/primitive.html"><strong aria-hidden="true">4.1.</strong> Bool, Tinyint, Smallint, Int, Bigint, Float, Double</a></li><li class="chapter-item expanded "><a href="data-types/text.html"><strong aria-hidden="true">4.2.</strong> Ascii, Text, Varchar</a></li><li class="chapter-item expanded "><a href="data-types/counter.html"><strong aria-hidden="true">4.3.</strong> Counter</a></li><li class="chapter-item expanded "><a href="data-types/blob.html"><strong aria-hidden="true">4.4.</strong> Blob</a></li><li class="chapter-item expanded "><a href="data-types/inet.html"><strong aria-hidden="true">4.5.</strong> Inet</a></li><li class="chapter-item expanded "><a href="data-types/uuid.html"><strong aria-hidden="true">4.6.</strong> Uuid, Timeuuid</a></li><li class="chapter-item expanded "><a href="data-types/date.html"><strong aria-hidden="true">4.7.</strong> Date</a></li><li class="chapter-item expanded "><a href="data-types/time.html"><strong aria-hidden="true">4.8.</strong> Time</a></li><li class="chapter-item expanded "><a href="data-types/timestamp.html"><strong aria-hidden="true">4.9.</strong> Timestamp</a></li><li class="chapter-item expanded "><a href="data-types/decimal.html"><strong aria-hidden="true">4.10.</strong> Decimal</a></li><li class="chapter-item expanded "><a href="data-types/varint.html"><strong aria-hidden="true">4.11.</strong> Varint</a></li><li class="chapter-item expanded "><a href="data-types/collections.html"><strong aria-hidden="true">4.12.</strong> List, Set, Map</a></li><li class="chapter-item expanded "><a href="data-types/tuple.html"><strong aria-hidden="true">4.13.</strong> Tuple</a></li><li class="chapter-item expanded "><a href="data-types/udt.html"><strong aria-hidden="true">4.14.</strong> UDT (User defined type)</a></li></ol></li><li class="chapter-item expanded "><a href="load-balancing/load-balancing.html"><strong aria-hidden="true">5.</strong> Load balancing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="load-balancing/robin.html"><strong aria-hidden="true">5.1.</strong> Round robin</a></li><li class="chapter-item expanded "><a href="load-balancing/dc-robin.html"><strong aria-hidden="true">5.2.</strong> DC Aware Round robin</a></li><li class="chapter-item expanded "><a href="load-balancing/token-robin.html"><strong aria-hidden="true">5.3.</strong> Token aware Round robin</a></li><li class="chapter-item expanded "><a href="load-balancing/token-dc-robin.html"><strong aria-hidden="true">5.4.</strong> Token aware DC Aware Round robin</a></li></ol></li><li class="chapter-item expanded "><a href="retry-policy/retry-policy.html"><strong aria-hidden="true">6.</strong> Retry policy configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="retry-policy/fallthrough.html"><strong aria-hidden="true">6.1.</strong> Fallthrough retry policy</a></li><li class="chapter-item expanded "><a href="retry-policy/default.html"><strong aria-hidden="true">6.2.</strong> Default retry policy</a></li></ol></li><li class="chapter-item expanded "><a href="metrics/metrics.html"><strong aria-hidden="true">7.</strong> Driver metrics</a></li><li class="chapter-item expanded "><a href="logging/logging.html"><strong aria-hidden="true">8.</strong> Logging</a></li><li class="chapter-item expanded "><a href="tracing/tracing.html"><strong aria-hidden="true">9.</strong> Query tracing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tracing/simple-prepared.html"><strong aria-hidden="true">9.1.</strong> Tracing a simple/prepared query</a></li><li class="chapter-item expanded "><a href="tracing/batch.html"><strong aria-hidden="true">9.2.</strong> Tracing a batch query</a></li><li class="chapter-item expanded "><a href="tracing/paged.html"><strong aria-hidden="true">9.3.</strong> Tracing a paged query</a></li><li class="chapter-item expanded "><a href="tracing/prepare.html"><strong aria-hidden="true">9.4.</strong> Tracing Session::prepare</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Scylla Rust Driver</a></li><li class="chapter-item expanded "><a href="quickstart/quickstart.html"><strong aria-hidden="true">1.</strong> Quick start</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="quickstart/create-project.html"><strong aria-hidden="true">1.1.</strong> Creating a project</a></li><li class="chapter-item expanded "><a href="quickstart/scylla-docker.html"><strong aria-hidden="true">1.2.</strong> Running Scylla using Docker</a></li><li class="chapter-item expanded "><a href="quickstart/example.html"><strong aria-hidden="true">1.3.</strong> Connecting and running a simple query</a></li></ol></li><li class="chapter-item expanded "><a href="connecting/connecting.html"><strong aria-hidden="true">2.</strong> Connecting to the cluster</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="connecting/compression.html"><strong aria-hidden="true">2.1.</strong> Compression</a></li><li class="chapter-item expanded "><a href="connecting/authentication.html"><strong aria-hidden="true">2.2.</strong> Authentication</a></li><li class="chapter-item expanded "><a href="connecting/tls.html"><strong aria-hidden="true">2.3.</strong> TLS</a></li></ol></li><li class="chapter-item expanded "><a href="queries/queries.html"><strong aria-hidden="true">3.</strong> Making queries</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="queries/simple.html"><strong aria-hidden="true">3.1.</strong> Simple query</a></li><li class="chapter-item expanded "><a href="queries/values.html"><strong aria-hidden="true">3.2.</strong> Query values</a></li><li class="chapter-item expanded "><a href="queries/result.html"><strong aria-hidden="true">3.3.</strong> Query result</a></li><li class="chapter-item expanded "><a href="queries/prepared.html"><strong aria-hidden="true">3.4.</strong> Prepared query</a></li><li class="chapter-item expanded "><a href="queries/batch.html"><strong aria-hidden="true">3.5.</strong> Batch statement</a></li><li class="chapter-item expanded "><a href="queries/paged.html"><strong aria-hidden="true">3.6.</strong> Paged query</a></li><li class="chapter-item expanded "><a href="queries/usekeyspace.html"><strong aria-hidden="true">3.7.</strong> USE keyspace</a></li><li class="chapter-item expanded "><a href="queries/schema_agreement.html"><strong aria-hidden="true">3.8.</strong> Schema agreement</a></li></ol></li><li class="chapter-item expanded "><a href="data-types/data-types.html"><strong aria-hidden="true">4.</strong> Data Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="data-types/primitive.html"><strong aria-hidden="true">4.1.</strong> Bool, Tinyint, Smallint, Int, Bigint, Float, Double</a></li><li class="chapter-item expanded "><a href="data-types/text.html"><strong aria-hidden="true">4.2.</strong> Ascii, Text, Varchar</a></li><li class="chapter-item expanded "><a href="data-types/counter.html"><strong aria-hidden="true">4.3.</strong> Counter</a></li><li class="chapter-item expanded "><a href="data-types/blob.html"><strong aria-hidden="true">4.4.</strong> Blob</a></li><li class="chapter-item expanded "><a href="data-types/inet.html"><strong aria-hidden="true">4.5.</strong> Inet</a></li><li class="chapter-item expanded "><a href="data-types/uuid.html"><strong aria-hidden="true">4.6.</strong> Uuid, Timeuuid</a></li><li class="chapter-item expanded "><a href="data-types/date.html"><strong aria-hidden="true">4.7.</strong> Date</a></li><li class="chapter-item expanded "><a href="data-types/time.html"><strong aria-hidden="true">4.8.</strong> Time</a></li><li class="chapter-item expanded "><a href="data-types/timestamp.html"><strong aria-hidden="true">4.9.</strong> Timestamp</a></li><li class="chapter-item expanded "><a href="data-types/decimal.html"><strong aria-hidden="true">4.10.</strong> Decimal</a></li><li class="chapter-item expanded "><a href="data-types/varint.html"><strong aria-hidden="true">4.11.</strong> Varint</a></li><li class="chapter-item expanded "><a href="data-types/collections.html"><strong aria-hidden="true">4.12.</strong> List, Set, Map</a></li><li class="chapter-item expanded "><a href="data-types/tuple.html"><strong aria-hidden="true">4.13.</strong> Tuple</a></li><li class="chapter-item expanded "><a href="data-types/udt.html"><strong aria-hidden="true">4.14.</strong> UDT (User defined type)</a></li></ol></li><li class="chapter-item expanded "><a href="load-balancing/load-balancing.html"><strong aria-hidden="true">5.</strong> Load balancing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="load-balancing/robin.html"><strong aria-hidden="true">5.1.</strong> Round robin</a></li><li class="chapter-item expanded "><a href="load-balancing/dc-robin.html"><strong aria-hidden="true">5.2.</strong> DC Aware Round robin</a></li><li class="chapter-item expanded "><a href="load-balancing/token-robin.html"><strong aria-hidden="true">5.3.</strong> Token aware Round robin</a></li><li class="chapter-item expanded "><a href="load-balancing/token-dc-robin.html"><strong aria-hidden="true">5.4.</strong> Token aware DC Aware Round robin</a></li></ol></li><li class="chapter-item expanded "><a href="retry-policy/retry-policy.html"><strong aria-hidden="true">6.</strong> Retry policy configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="retry-policy/fallthrough.html"><strong aria-hidden="true">6.1.</strong> Fallthrough retry policy</a></li><li class="chapter-item expanded "><a href="retry-policy/default.html"><strong aria-hidden="true">6.2.</strong> Default retry policy</a></li></ol></li><li class="chapter-item expanded "><a href="speculative-execution/speculative.html"><strong aria-hidden="true">7.</strong> Speculative execution</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="speculative-execution/simple.html"><strong aria-hidden="true">7.1.</strong> Simple</a></li><li class="chapter-item expanded "><a href="speculative-execution/percentile.html"><strong aria-hidden="true">7.2.</strong> Latency Percentile</a></li></ol></li><li class="chapter-item expanded "><a href="metrics/metrics.html"><strong aria-hidden="true">8.</strong> Driver metrics</a></li><li class="chapter-item expanded "><a href="logging/logging.html"><strong aria-hidden="true">9.</strong> Logging</a></li><li class="chapter-item expanded "><a href="tracing/tracing.html"><strong aria-hidden="true">10.</strong> Query tracing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tracing/simple-prepared.html"><strong aria-hidden="true">10.1.</strong> Tracing a simple/prepared query</a></li><li class="chapter-item expanded "><a href="tracing/batch.html"><strong aria-hidden="true">10.2.</strong> Tracing a batch query</a></li><li class="chapter-item expanded "><a href="tracing/paged.html"><strong aria-hidden="true">10.3.</strong> Tracing a paged query</a></li><li class="chapter-item expanded "><a href="tracing/prepare.html"><strong aria-hidden="true">10.4.</strong> Tracing Session::prepare</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -122,33 +103,26 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Scylla Rust Driver</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
                         <a href="https://github.com/scylladb/scylla-rust-driver" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -156,8 +130,6 @@
                         </ul>
                     </div>
                 </div>
-                
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -192,15 +164,21 @@ Although optimized for Scylla, the driver is also compatible with <a href="https
 <li><a href="logging/logging.html">Logging</a> - Viewing and integrating logs produced by the driver</li>
 <li><a href="tracing/tracing.html">Query tracing</a> - Tracing query execution</li>
 </ul>
-<h1 id="quick-start"><a class="header" href="#quick-start">Quick Start</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="quick-start"><a class="header" href="#quick-start">Quick Start</a></h1>
 <p>In this chapter we will set up a Rust project and run a few simple queries.</p>
-<h1 id="creating-a-project"><a class="header" href="#creating-a-project">Creating a project</a></h1>
+<p>Topics Include:</p>
+<ul>
+<li><a href="quickstart/create-project.html">Create a Rust Project</a></li>
+<li><a href="quickstart/example.html">Example</a></li>
+<li><a href="quickstart/scylla-docker.html">Install Scylla with Docker</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="creating-a-project"><a class="header" href="#creating-a-project">Creating a project</a></h1>
 <p>To create a new project run:</p>
 <pre><code class="language-shell">cargo new myproject
 </code></pre>
 <p>In <code>Cargo.toml</code> add useful dependencies:</p>
 <pre><code class="language-toml">[dependencies]
-scylla = &quot;0.1.0&quot;
+scylla = &quot;0.2.0&quot;
 tokio = { version = &quot;1.1.0&quot;, features = [&quot;full&quot;] }
 futures = &quot;0.3.6&quot;
 uuid = &quot;0.8.1&quot;
@@ -222,7 +200,7 @@ async fn main() {
 <p>Now running <code>cargo run</code> should print:</p>
 <pre><code class="language-shell">Hello scylla!
 </code></pre>
-<h1 id="running-scylla-using-docker"><a class="header" href="#running-scylla-using-docker">Running Scylla using Docker</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="running-scylla-using-docker"><a class="header" href="#running-scylla-using-docker">Running Scylla using Docker</a></h1>
 <p>To make queries we will need a running Scylla instance. The easiest way is to use a <a href="https://www.docker.com/">Docker</a> image.<br />
 Please <a href="https://docs.docker.com/engine/install">install Docker</a> if it's not installed.</p>
 <h3 id="running-scylla"><a class="header" href="#running-scylla">Running scylla</a></h3>
@@ -237,7 +215,7 @@ docker run --rm -it -p 9042:9042 scylladb/scylla --smp 2
 <p>To stop this instance press <code>Ctrl + C</code></p>
 <h3 id="more-information"><a class="header" href="#more-information">More information</a></h3>
 <p>More information about this image can be found on <a href="https://hub.docker.com/r/scylladb/scylla">dockerhub</a></p>
-<h1 id="connecting-and-running-a-simple-query"><a class="header" href="#connecting-and-running-a-simple-query">Connecting and running a simple query</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="connecting-and-running-a-simple-query"><a class="header" href="#connecting-and-running-a-simple-query">Connecting and running a simple query</a></h1>
 <p>Now everything is ready to use the driver.
 Here is a small example:</p>
 <pre><pre class="playground"><code class="language-rust edition2018"><span class="boring">extern crate scylla;
@@ -291,13 +269,14 @@ async fn main() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
     Ok(())
 }
 </code></pre></pre>
-<h1 id="connecting-to-the-cluster"><a class="header" href="#connecting-to-the-cluster">Connecting to the cluster</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="connecting-to-the-cluster"><a class="header" href="#connecting-to-the-cluster">Connecting to the cluster</a></h1>
 <p>Scylla is a distributed database, which means that it operates on multiple nodes running independently.
 When creating a <code>Session</code> you can specify a few known nodes to which the driver will try connecting:</p>
 <pre><pre class="playground"><code class="language-rust edition2018"><span class="boring">extern crate scylla;
 </span><span class="boring">extern crate tokio;
 </span>use scylla::{Session, SessionBuilder};
 use std::error::Error;
+use std::time::Duration;
 use std::net::{IpAddr, Ipv4Addr, SocketAddr};
 
 #[tokio::main]
@@ -309,6 +288,7 @@ async fn main() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
         .known_node(uri)
         .known_node(&quot;127.0.0.72:4321&quot;)
         .known_node(&quot;localhost:8000&quot;)
+        .connection_timeout(Duration::from_secs(3))
         .known_node_addr(SocketAddr::new(
             IpAddr::V4(Ipv4Addr::new(127, 0, 0, 1)),
             9000,
@@ -321,7 +301,7 @@ async fn main() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
 </code></pre></pre>
 <p>After succesfully connecting to some specified node the driver will fetch topology information about
 other nodes in this cluster and connect to them as well.</p>
-<h1 id="compression"><a class="header" href="#compression">Compression</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="compression"><a class="header" href="#compression">Compression</a></h1>
 <p>By default the driver does not use any compression on connections.<br />
 It's possible to specify a preferred compression algorithm.<br />
 The driver will try using it, but if the database doesn't support it, it will fall back to no compression.</p>
@@ -351,7 +331,7 @@ async fn main() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
     Ok(())
 }
 </code></pre></pre>
-<h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="authentication"><a class="header" href="#authentication">Authentication</a></h1>
 <p>Driver supports authentication by username and password.</p>
 <p>To specify credentials use the <code>user</code> method in <code>SessionBuilder</code>:</p>
 <pre><pre class="playground"><code class="language-rust edition2018">
@@ -373,14 +353,14 @@ let session: Session = SessionBuilder::new()
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="tls"><a class="header" href="#tls">TLS</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tls"><a class="header" href="#tls">TLS</a></h1>
 <p>Driver uses the <a href="https://github.com/sfackler/rust-openssl"><code>openssl</code></a> crate for TLS functionality.<br />
 It was chosen because <a href="https://github.com/ctz/rustls"><code>rustls</code></a> doesn't support certificates for ip addresses
 (see <a href="https://github.com/briansmith/webpki/issues/54">issue</a>), which is a common use case for Scylla.</p>
 <h3 id="enabling-feature"><a class="header" href="#enabling-feature">Enabling feature</a></h3>
 <p><code>openssl</code> is not a pure Rust library so you need enable a feature and install the proper package.</p>
 <p>To enable the <code>tls</code> feature add in <code>Cargo.toml</code>:</p>
-<pre><code class="language-toml">scylla = { version = &quot;0.1.0&quot;, features = [&quot;ssl&quot;] }
+<pre><code class="language-toml">scylla = { version = &quot;0.2.0&quot;, features = [&quot;ssl&quot;] }
 openssl = &quot;0.10.32&quot;
 </code></pre>
 <p>Then install the package with <code>openssl</code>:</p>
@@ -440,7 +420,7 @@ let session: Session = SessionBuilder::new()
 </span><span class="boring">}
 </span></code></pre></pre>
 <p>See the full <a href="https://github.com/scylladb/scylla-rust-driver/blob/main/examples/tls.rs">example</a> for more details</p>
-<h1 id="making-queries"><a class="header" href="#making-queries">Making queries</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="making-queries"><a class="header" href="#making-queries">Making queries</a></h1>
 <p>This driver supports all query types available in Scylla:</p>
 <ul>
 <li><a href="queries/simple.html">Simple queries</a>
@@ -473,7 +453,7 @@ let session: Session = SessionBuilder::new()
 <p>Additionaly there is special functionality to enable <code>USE KEYSPACE</code> queries:
 <a href="queries/usekeyspace.html">USE keyspace</a></p>
 <p>Queries are fully asynchronous - you can run as many of them in parallel as you wish.</p>
-<h1 id="simple-query"><a class="header" href="#simple-query">Simple query</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="simple-query"><a class="header" href="#simple-query">Simple query</a></h1>
 <p>Simple query takes query text and values and simply executes them on a <code>Session</code>:</p>
 <pre><pre class="playground"><code class="language-rust edition2018">
 <span class="boring">#![allow(unused)]
@@ -520,7 +500,7 @@ session.query(my_query, (to_insert,)).await?;
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<p>See <a href="https://docs.rs/scylla/0.1.0/scylla/statement/query/struct.Query.html">Query API documentation</a> for more options</p>
+<p>See <a href="https://docs.rs/scylla/0.2.0/scylla/statement/query/struct.Query.html">Query API documentation</a> for more options</p>
 <h3 id="second-argument---the-values"><a class="header" href="#second-argument---the-values">Second argument - the values</a></h3>
 <p>Query text is constant, but the values might change.
 You can pass changing values to a query by specifying a list of variables as bound values.<br />
@@ -580,7 +560,7 @@ If number of rows might exceed single page size use a <a href="queries/paged.htm
 If perfomance matters use a <a href="queries/prepared.html">Prepared query</a> instead.</p>
 <p>With simple query the database has to parse query text each time it's executed, which worsens performance.</p>
 <p>Additionaly token and shard aware load balancing does not work with simple queries. They are sent to random nodes.</p>
-<h1 id="query-values"><a class="header" href="#query-values">Query values</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="query-values"><a class="header" href="#query-values">Query values</a></h1>
 <p>Query text is constant, but the values might change.
 You can pass changing values to a query by specifying a list of variables as bound values.<br />
 Each <code>?</code> in query text will be filled with the matching value. </p>
@@ -677,7 +657,7 @@ session
 <p>See the <a href="https://issues.apache.org/jira/browse/CASSANDRA-7304">issue</a> for more information about <code>Unset</code></p>
 <h3 id="other-data-types"><a class="header" href="#other-data-types">Other data types</a></h3>
 <p>See <a href="queries/../data-types/data-types.html">Data Types</a> for instructions on sending other data types</p>
-<h1 id="query-result-1"><a class="header" href="#query-result-1">Query result</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="query-result-1"><a class="header" href="#query-result-1">Query result</a></h1>
 <p><code>Session::query</code> and <code>Session::execute</code> return a <code>QueryResult</code> with rows represented as <code>Option&lt;Vec&lt;Row&gt;&gt;</code>.</p>
 <h3 id="basic-representation"><a class="header" href="#basic-representation">Basic representation</a></h3>
 <p><code>Row</code> is a basic representation of a received row. It can be used by itself, but it's a bit awkward to use:</p>
@@ -792,7 +772,7 @@ if let Some(rows) = session.query(&quot;SELECT a, b from ks.tab&quot;, &amp;[]).
 </span></code></pre></pre>
 <h3 id="other-data-types-1"><a class="header" href="#other-data-types-1">Other data types</a></h3>
 <p>For parsing other data types see <a href="queries/../data-types/data-types.html">Data Types</a></p>
-<h1 id="prepared-query"><a class="header" href="#prepared-query">Prepared query</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="prepared-query"><a class="header" href="#prepared-query">Prepared query</a></h1>
 <p>Prepared queries provide much better performance than simple queries, 
 but they need to be prepared before use.</p>
 <pre><pre class="playground"><code class="language-rust edition2018">
@@ -861,7 +841,7 @@ session.execute(&amp;prepared, (to_insert,)).await?;
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<p>See <a href="https://docs.rs/scylla/0.1.0/scylla/statement/prepared_statement/struct.PreparedStatement.html">PreparedStatement API documentation</a> 
+<p>See <a href="https://docs.rs/scylla/0.2.0/scylla/statement/prepared_statement/struct.PreparedStatement.html">PreparedStatement API documentation</a> 
 for more options</p>
 <h3 id="performance-1"><a class="header" href="#performance-1">Performance</a></h3>
 <p>Prepared queries have good performance, much better than simple queries.<br />
@@ -908,7 +888,7 @@ session.execute(&amp;good_prepared, (12345, 54321)).await?;
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="batch-statement"><a class="header" href="#batch-statement">Batch statement</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="batch-statement"><a class="header" href="#batch-statement">Batch statement</a></h1>
 <p>A batch statement allows to run many queries at once.<br />
 These queries can be <a href="queries/simple.html">simple queries</a> or <a href="queries/prepared.html">prepared queries</a>.<br />
 Only queries like <code>INSERT</code> or <code>UPDATE</code> can be in a batch, batch doesn't return any rows.</p>
@@ -976,7 +956,7 @@ session.batch(&amp;batch, ((), )).await?;
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<p>See <a href="https://docs.rs/scylla/0.1.0/scylla/statement/batch/struct.Batch.html">Batch API documentation</a>
+<p>See <a href="https://docs.rs/scylla/0.2.0/scylla/statement/batch/struct.Batch.html">Batch API documentation</a>
 for more options</p>
 <h3 id="batch-values"><a class="header" href="#batch-values">Batch values</a></h3>
 <p>Batch takes a tuple of values specified just like in <a href="queries/simple.html">simple</a> or <a href="queries/prepared.html">prepared</a> queries.</p>
@@ -1020,7 +1000,7 @@ session.batch(&amp;batch, batch_values).await?;
 <h3 id="performance-2"><a class="header" href="#performance-2">Performance</a></h3>
 <p>Batch statements do not use token/shard aware load balancing, batches are sent to a random node.</p>
 <p>Use <a href="queries/prepared.html">prepared queries</a> for best performance</p>
-<h1 id="paged-query"><a class="header" href="#paged-query">Paged query</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="paged-query"><a class="header" href="#paged-query">Paged query</a></h1>
 <p>Sometimes query results might not fit in a single page. Paged queries
 allow to receive the whole result page by page.</p>
 <p><code>Session::query_iter</code> and <code>Session::execute_iter</code> take a <a href="queries/simple.html">simple query</a> or a <a href="queries/prepared.html">prepared query</a>
@@ -1123,10 +1103,54 @@ let _ = session.execute_iter(prepared, &amp;[]).await?; // ...
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
+<h3 id="passing-the-paging-state-manually"><a class="header" href="#passing-the-paging-state-manually">Passing the paging state manually</a></h3>
+<p>It's possible to fetch a single page from the table, extract the paging state
+from the result and manually pass it to the next query. That way, the next
+query will start fetching the results from where the previous one left off.</p>
+<p>On a <code>Query</code>:</p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">use scylla::Session;
+</span><span class="boring">use std::error::Error;
+</span><span class="boring">async fn check_only_compiles(session: &amp;Session) -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>use scylla::query::Query;
+
+let paged_query = Query::new(&quot;SELECT a, b, c FROM ks.t&quot;.to_owned()).with_page_size(6);
+let res1 = session.query(paged_query.clone(), &amp;[]).await?;
+let res2 = session
+    .query_paged(paged_query.clone(), &amp;[], res1.paging_state)
+    .await?;
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
+<p>On a <code>PreparedStatement</code>:</p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">use scylla::Session;
+</span><span class="boring">use std::error::Error;
+</span><span class="boring">async fn check_only_compiles(session: &amp;Session) -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>use scylla::query::Query;
+
+let paged_prepared = session
+    .prepare(Query::new(&quot;SELECT a, b, c FROM ks.t&quot;.to_owned()).with_page_size(7))
+    .await?;
+let res1 = session.execute(&amp;paged_prepared, &amp;[]).await?;
+let res2 = session
+    .execute_paged(&amp;paged_prepared, &amp;[], res1.paging_state)
+    .await?;
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
 <h3 id="performance-3"><a class="header" href="#performance-3">Performance</a></h3>
 <p>Performance is the same as in non-paged variants.<br />
 For the best performance use <a href="queries/prepared.html">prepared queries</a>.</p>
-<h1 id="use-keyspace"><a class="header" href="#use-keyspace">USE keyspace</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="use-keyspace"><a class="header" href="#use-keyspace">USE keyspace</a></h1>
 <p>Using a keyspace allows to omit keyspace name in queries.</p>
 <p>For example in <code>cqlsh</code> one could write:</p>
 <pre><code class="language-sql">cqlsh&gt; SELECT * FROM my_keyspace.table;
@@ -1203,7 +1227,96 @@ session.use_keyspace(&quot;MY_KEYSPACE&quot;, true).await?;
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="data-types"><a class="header" href="#data-types">Data Types</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="schema-agreement"><a class="header" href="#schema-agreement">Schema agreement</a></h1>
+<p>Sometimes after performing queries some nodes have not been updated so we need a mechanism that checks if every node have agreed schema version.
+There are four methods in <code>Session</code> that assist us. 
+Every method raise <code>QueryError</code> if something goes wrong, but they should never raise any errors, unless there is a DB or connection malfunction.</p>
+<h3 id="checking-schema-version"><a class="header" href="#checking-schema-version">Checking schema version</a></h3>
+<p><code>Session::fetch_schema_version</code> returns an <code>Uuid</code> of local node's schema version. </p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">use scylla::Session;
+</span><span class="boring">use std::error::Error;
+</span><span class="boring">async fn check_only_compiles(session: &amp;Session) -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>println!(&quot;Local schema version is: {}&quot;, session.fetch_schema_version().await?);
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
+<h3 id="awaiting-schema-agreement"><a class="header" href="#awaiting-schema-agreement">Awaiting schema agreement</a></h3>
+<p><code>Session::await_schema_agreement</code> returns a <code>Future</code> that can be <code>await</code>ed on as long as schema is not in an agreement.</p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">use scylla::Session;
+</span><span class="boring">use std::error::Error;
+</span><span class="boring">async fn check_only_compiles(session: &amp;Session) -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>session.await_schema_agreement().await?;
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
+<h3 id="awaiting-with-timeout"><a class="header" href="#awaiting-with-timeout">Awaiting with timeout</a></h3>
+<p>We can also set timeout in miliseconds with <code>Session::await_timed_schema_agreement</code>.
+It takes one argument, an <code>std::time::Duration</code> value that tells how long our driver should await for schema agreement. If the timeout is met the return value is <code>false</code> otherwise it is <code>true</code>.</p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">use scylla::Session;
+</span><span class="boring">use std::error::Error;
+</span><span class="boring">use std::time::Duration;
+</span><span class="boring">async fn check_only_compiles(session: &amp;Session) -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>if session.await_timed_schema_agreement(Duration::from_secs(5)).await? { // wait for 5 seconds
+    println!(&quot;SCHEMA AGREED&quot;);
+} else {
+    println!(&quot;SCHEMA IS NOT IN AGREEMENT - TIMED OUT&quot;);
+}
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
+<h3 id="checking-for-schema-interval"><a class="header" href="#checking-for-schema-interval">Checking for schema interval</a></h3>
+<p>If schema is not agreed driver sleeps for a duration before checking it again. Default value is 200 miliseconds but it can be changed with <code>SessionBuilder::schema_agreement_interval</code>.</p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">use scylla::SessionBuilder;
+</span><span class="boring">use std::error::Error;
+</span><span class="boring">use std::time::Duration;
+</span><span class="boring">async fn check_only_compiles() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>SessionBuilder::new()
+    .known_node(&quot;127.0.0.1:9042&quot;)
+    .schema_agreement_interval(Duration::from_secs(1))
+    .build()
+    .await?;
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
+<h3 id="checking-if-schema-is-in-agreement-now"><a class="header" href="#checking-if-schema-is-in-agreement-now">Checking if schema is in agreement now</a></h3>
+<p>If you want to check if schema is in agreement now without retrying after failure you can use <code>Session::check_schema_agreement</code> function.</p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">use scylla::Session;
+</span><span class="boring">use std::error::Error;
+</span><span class="boring">async fn check_only_compiles(session: &amp;Session) -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>if session.check_schema_agreement().await? { 
+    println!(&quot;SCHEMA AGREED&quot;);
+} else {
+    println!(&quot;SCHEMA IS NOT IN AGREEMENT&quot;);
+}
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="data-types"><a class="header" href="#data-types">Data Types</a></h1>
 <p>The driver maps database data types to matching Rust types
 to achieve seamless sending and receiving of CQL values.</p>
 <p>See the following chapters for examples on how to send and receive each data type.</p>
@@ -1234,7 +1347,7 @@ See <a href="data-types/../queries/result.html">Query result</a> for more inform
 <li><code>Tuple</code> &lt;----&gt; Rust tuples</li>
 <li><code>UDT (User defined type)</code> &lt;----&gt; Custom user structs with macros</li>
 </ul>
-<h1 id="bool-tinyint-smallint-int-bigint-float-double"><a class="header" href="#bool-tinyint-smallint-int-bigint-float-double">Bool, Tinyint, Smallint, Int, Bigint, Float, Double</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="bool-tinyint-smallint-int-bigint-float-double"><a class="header" href="#bool-tinyint-smallint-int-bigint-float-double">Bool, Tinyint, Smallint, Int, Bigint, Float, Double</a></h1>
 <h3 id="bool"><a class="header" href="#bool">Bool</a></h3>
 <p><code>Bool</code> is represented as rust <code>bool</code></p>
 <pre><pre class="playground"><code class="language-rust edition2018">
@@ -1424,7 +1537,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="ascii-text-varchar"><a class="header" href="#ascii-text-varchar">Ascii, Text, Varchar</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ascii-text-varchar"><a class="header" href="#ascii-text-varchar">Ascii, Text, Varchar</a></h1>
 <p><code>Ascii</code>, <code>Text</code> and <code>Varchar</code> are represented as <code>&amp;str</code> and <code>String</code></p>
 <pre><pre class="playground"><code class="language-rust edition2018">
 <span class="boring">#![allow(unused)]
@@ -1457,7 +1570,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="counter"><a class="header" href="#counter">Counter</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="counter"><a class="header" href="#counter">Counter</a></h1>
 <p><code>Counter</code> is represented as <code>struct Counter(pub i64)</code><br />
 <code>Counter</code> can't be inserted, it can only be read or updated.</p>
 <pre><pre class="playground"><code class="language-rust edition2018">
@@ -1481,7 +1594,7 @@ if let Some(rows) = session.query(&quot;SELECT c FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="blob"><a class="header" href="#blob">Blob</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="blob"><a class="header" href="#blob">Blob</a></h1>
 <p><code>Blob</code> is represented as <code>Vec&lt;u8&gt;</code></p>
 <pre><pre class="playground"><code class="language-rust edition2018">
 <span class="boring">#![allow(unused)]
@@ -1509,7 +1622,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="inet"><a class="header" href="#inet">Inet</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="inet"><a class="header" href="#inet">Inet</a></h1>
 <p><code>Inet</code> is represented as <code>std::net::IpAddr</code></p>
 <pre><pre class="playground"><code class="language-rust edition2018">
 <span class="boring">#![allow(unused)]
@@ -1537,7 +1650,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="uuid-timeuuid"><a class="header" href="#uuid-timeuuid">Uuid, Timeuuid</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="uuid-timeuuid"><a class="header" href="#uuid-timeuuid">Uuid, Timeuuid</a></h1>
 <p><code>Uuid</code> and <code>Timeuuid</code> are represented as <code>uuid::Uuid</code></p>
 <pre><pre class="playground"><code class="language-rust edition2018">
 <span class="boring">#![allow(unused)]
@@ -1566,7 +1679,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="date"><a class="header" href="#date">Date</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="date"><a class="header" href="#date">Date</a></h1>
 <p>For most use cases <code>Date</code> can be represented as 
 <a href="https://docs.rs/chrono/0.4.19/chrono/naive/struct.NaiveDate.html"><code>chrono::NaiveDate</code></a>.<br />
 <code>NaiveDate</code> supports dates from -262145-1-1 to 262143-12-31.</p>
@@ -1630,7 +1743,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="time"><a class="header" href="#time">Time</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="time"><a class="header" href="#time">Time</a></h1>
 <p><code>Time</code> is represented as <a href="https://docs.rs/chrono/0.4.19/chrono/struct.Duration.html"><code>chrono::Duration</code></a></p>
 <p>Internally <code>Time</code> is represented as number of nanoseconds since midnight. 
 It can't be negative or exceed <code>86399999999999</code> (24 hours).</p>
@@ -1663,7 +1776,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="timestamp"><a class="header" href="#timestamp">Timestamp</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="timestamp"><a class="header" href="#timestamp">Timestamp</a></h1>
 <p><code>Timestamp</code> is represented as <a href="https://docs.rs/chrono/0.4.19/chrono/struct.Duration.html"><code>chrono::Duration</code></a></p>
 <p>Internally <code>Timestamp</code> is represented as <code>i64</code> describing number of milliseconds since unix epoch.
 Driver converts this to <code>chrono::Duration</code></p>
@@ -1696,7 +1809,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="decimal"><a class="header" href="#decimal">Decimal</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="decimal"><a class="header" href="#decimal">Decimal</a></h1>
 <p><code>Decimal</code> is represented as <a href="https://docs.rs/bigdecimal/0.2.0/bigdecimal/struct.BigDecimal.html"><code>bigdecimal::BigDecimal</code></a></p>
 <pre><pre class="playground"><code class="language-rust edition2018">
 <span class="boring">#![allow(unused)]
@@ -1726,7 +1839,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="varint"><a class="header" href="#varint">Varint</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="varint"><a class="header" href="#varint">Varint</a></h1>
 <p><code>Varint</code> is represented as <a href="https://docs.rs/num-bigint/0.4.0/num_bigint/struct.BigInt.html"><code>num_bigint::BigInt</code></a></p>
 <pre><pre class="playground"><code class="language-rust edition2018">
 <span class="boring">#![allow(unused)]
@@ -1756,7 +1869,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="list-set-map"><a class="header" href="#list-set-map">List, Set, Map</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="list-set-map"><a class="header" href="#list-set-map">List, Set, Map</a></h1>
 <h2 id="list"><a class="header" href="#list">List</a></h2>
 <p><code>List</code> is represented as <code>Vec&lt;T&gt;</code></p>
 <pre><pre class="playground"><code class="language-rust edition2018">
@@ -1841,7 +1954,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="tuple"><a class="header" href="#tuple">Tuple</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tuple"><a class="header" href="#tuple">Tuple</a></h1>
 <p><code>Tuple</code> is represented as rust tuples of max 16 elements.</p>
 <pre><pre class="playground"><code class="language-rust edition2018">
 <span class="boring">#![allow(unused)]
@@ -1871,7 +1984,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="user-defined-types"><a class="header" href="#user-defined-types">User defined types</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="user-defined-types"><a class="header" href="#user-defined-types">User defined types</a></h1>
 <p>Scylla allows users to define their own data types with named fields.<br />
 The driver supports this by allowing to create a custom struct with derived functionality.</p>
 <p>For example let's say <code>my_type</code> was created using this query:</p>
@@ -1919,7 +2032,7 @@ if let Some(rows) = session.query(&quot;SELECT a FROM keyspace.table&quot;, &amp
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="load-balancing"><a class="header" href="#load-balancing">Load balancing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="load-balancing"><a class="header" href="#load-balancing">Load balancing</a></h1>
 <p>There are multiple load balancing strategies that the driver can use.<br />
 Load balancing can be configured for the whole <code>Session</code> during creation.</p>
 <p>Basic load balancing strategies:</p>
@@ -1942,7 +2055,7 @@ If a token is available the query is sent to the correct shard, otherwise to a r
 <li><a href="load-balancing/token-dc-robin.html">Token aware DC Aware Round robin</a></li>
 </ul>
 <p>By default the driver uses <code>Token aware Round robin</code></p>
-<h1 id="round-robin"><a class="header" href="#round-robin">Round robin</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="round-robin"><a class="header" href="#round-robin">Round robin</a></h1>
 <p>The simplest load balancing policy available.<br />
 Takes all nodes in the cluster and uses them one after another.</p>
 <p>For example if there are nodes <code>A</code>, <code>B</code>, <code>C</code> in the cluster, 
@@ -1969,7 +2082,7 @@ let session: Session = SessionBuilder::new()
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="dc-aware-round-robin"><a class="header" href="#dc-aware-round-robin">DC Aware Round robin</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dc-aware-round-robin"><a class="header" href="#dc-aware-round-robin">DC Aware Round robin</a></h1>
 <p>This is a more sophisticated version of <a href="load-balancing/robin.html">Round robin policy</a>.
 It takes all nodes in the local datacenter and uses them one after another.<br />
 If no nodes from the local datacenter are available it will fall back to other nodes.</p>
@@ -2003,7 +2116,7 @@ let session: Session = SessionBuilder::new()
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="token-aware-round-robin"><a class="header" href="#token-aware-round-robin">Token aware Round robin</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="token-aware-round-robin"><a class="header" href="#token-aware-round-robin">Token aware Round robin</a></h1>
 <p>This policy will try to calculate a token to find replica nodes in which queried data is stored.<br />
 After finding the replicas it performs a round robin on them.</p>
 <h3 id="example-2"><a class="header" href="#example-2">Example</a></h3>
@@ -2031,7 +2144,7 @@ let session: Session = SessionBuilder::new()
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="token-aware-dc-aware-round-robin"><a class="header" href="#token-aware-dc-aware-round-robin">Token aware DC Aware Round robin</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="token-aware-dc-aware-round-robin"><a class="header" href="#token-aware-dc-aware-round-robin">Token aware DC Aware Round robin</a></h1>
 <p>This policy will try to calculate a token to find replica nodes in which queried data is stored.<br />
 After finding the replicas it chooses the ones from the local datacenter and performs a round robin on them.</p>
 <h3 id="example-3"><a class="header" href="#example-3">Example</a></h3>
@@ -2060,7 +2173,7 @@ let session: Session = SessionBuilder::new()
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="retry-policy-configuration"><a class="header" href="#retry-policy-configuration">Retry policy configuration</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="retry-policy-configuration"><a class="header" href="#retry-policy-configuration">Retry policy configuration</a></h1>
 <p>After a query fails the driver might decide to retry it based on its <code>Retry Policy</code> and the query itself.
 Retry policy can be configured for <code>Session</code> or just for a single query.</p>
 <h3 id="retry-policies"><a class="header" href="#retry-policies">Retry policies</a></h3>
@@ -2100,7 +2213,7 @@ prepared.set_is_idempotent(true);
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="fallthrough-retry-policy"><a class="header" href="#fallthrough-retry-policy">Fallthrough retry policy</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="fallthrough-retry-policy"><a class="header" href="#fallthrough-retry-policy">Fallthrough retry policy</a></h1>
 <p>The <code>FalthroughRetryPolicy</code> never retries, returns errors straight to the user. Useful for debugging.</p>
 <h3 id="examples-1"><a class="header" href="#examples-1">Examples</a></h3>
 <p>To use in <code>Session</code>:</p>
@@ -2170,7 +2283,7 @@ session.execute(&amp;prepared, (to_insert,)).await?;
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="default-retry-policy"><a class="header" href="#default-retry-policy">Default retry policy</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="default-retry-policy"><a class="header" href="#default-retry-policy">Default retry policy</a></h1>
 <p>This is the retry policy used by default. It retries when there is a high chance that it might help.<br />
 This policy is based on the one in <a href="https://docs.datastax.com/en/developer/java-driver/4.11/manual/core/retries/">DataStax Java Driver</a>.
 The behaviour is the same.</p>
@@ -2242,7 +2355,90 @@ session.execute(&amp;prepared, (to_insert,)).await?;
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="driver-metrics"><a class="header" href="#driver-metrics">Driver metrics</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="speculative-execution"><a class="header" href="#speculative-execution">Speculative execution</a></h1>
+<p>Speculative query execution is an optimization technique where a driver
+pre-emptively starts a second execution of a query against another node,
+before the first node has replied.</p>
+<p>There are multiple speculative execution strategies that the driver can use.
+Speculative execution can be configured for the whole whole <code>Session</code> during
+its creation.</p>
+<p>Available speculative execution strategies:</p>
+<ul>
+<li><a href="speculative-execution/simple.html">Simple</a></li>
+<li><a href="speculative-execution/percentile.html">Latency Percentile</a></li>
+</ul>
+<p>Speculative execution is not enabled by default, and currently only
+non-iter session methods use it.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="simple-speculative-execution"><a class="header" href="#simple-speculative-execution">Simple speculative execution</a></h1>
+<p>The easiest speculative execution policy available.  It starts another
+execution of a query after constant delay of <code>retry_interval</code> and does at most
+<code>max_retry_count</code> speculative query executions (not counting the first,
+non-speculative one).</p>
+<h3 id="example-4"><a class="header" href="#example-4">Example</a></h3>
+<p>To use this policy in <code>Session</code>:</p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">use scylla::Session;
+</span><span class="boring">use std::error::Error;
+</span><span class="boring">async fn check_only_compiles() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>use std::{sync::Arc, time::Duration};
+use scylla::{
+    Session,
+    SessionBuilder,
+    speculative_execution::SimpleSpeculativeExecutionPolicy
+};
+
+let policy = SimpleSpeculativeExecutionPolicy {
+    max_retry_count: 3,
+    retry_interval: Duration::from_millis(100),
+};
+
+let session: Session = SessionBuilder::new()
+    .known_node(&quot;127.0.0.1:9042&quot;)
+    .speculative_execution(Arc::new(policy))
+    .build()
+    .await?;
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="percentile-speculative-execution"><a class="header" href="#percentile-speculative-execution">Percentile speculative execution</a></h1>
+<p>This policy has access to <code>Metrics</code> shared with session, and triggers
+speculative execution when the request to the current host is above a
+given percentile.</p>
+<h3 id="example-5"><a class="header" href="#example-5">Example</a></h3>
+<p>To use this policy in <code>Session</code>:</p>
+<pre><pre class="playground"><code class="language-rust edition2018">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span><span class="boring">extern crate scylla;
+</span><span class="boring">use scylla::Session;
+</span><span class="boring">use std::error::Error;
+</span><span class="boring">async fn check_only_compiles() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+</span>use std::{sync::Arc, time::Duration};
+use scylla::{
+    Session,
+    SessionBuilder,
+    speculative_execution::PercentileSpeculativeExecutionPolicy,
+};
+
+let policy = PercentileSpeculativeExecutionPolicy  {
+    max_retry_count: 3,
+    percentile: 99.0,
+};
+
+let session: Session = SessionBuilder::new()
+    .known_node(&quot;127.0.0.1:9042&quot;)
+    .speculative_execution(Arc::new(policy))
+    .build()
+    .await?;
+<span class="boring">Ok(())
+</span><span class="boring">}
+</span><span class="boring">}
+</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="driver-metrics"><a class="header" href="#driver-metrics">Driver metrics</a></h1>
 <p>During operation the driver collects various metrics.</p>
 <p>They can be accessed at any moment using <code>Session::get_metrics()</code></p>
 <h3 id="collected-metrics"><a class="header" href="#collected-metrics">Collected metrics:</a></h3>
@@ -2254,7 +2450,7 @@ session.execute(&amp;prepared, (to_insert,)).await?;
 <li>Number of errors during paged queries</li>
 <li>Number of retries</li>
 </ul>
-<h3 id="example-4"><a class="header" href="#example-4">Example</a></h3>
+<h3 id="example-6"><a class="header" href="#example-6">Example</a></h3>
 <pre><pre class="playground"><code class="language-rust edition2018">
 <span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
@@ -2277,7 +2473,7 @@ println!(
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="logging"><a class="header" href="#logging">Logging</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="logging"><a class="header" href="#logging">Logging</a></h1>
 <p>The driver uses the <a href="https://github.com/tokio-rs/tracing">tracing</a> crate for all logs.<br />
 To view the logs you have to create a <code>tracing</code> subscriber to which all logs will be written.</p>
 <p>To just print the logs you can use the default subscriber:</p>
@@ -2319,7 +2515,7 @@ async fn main() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
 <pre><code class="language-shell">RUST_LOG=info cargo run
 </code></pre>
 <p>The full <a href="https://github.com/scylladb/scylla-rust-driver/tree/main/examples/logging.rs">example</a> is available in the <code>examples</code> folder</p>
-<h1 id="query-tracing"><a class="header" href="#query-tracing">Query tracing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="query-tracing"><a class="header" href="#query-tracing">Query tracing</a></h1>
 <p>Each query's execution can be traced to see to which nodes it was sent, what operations were performed etc.</p>
 <p>First tracing has to be enabled for a query and then its result will contain a tracing id which can be used to query tracing information.</p>
 <p>Queries that support tracing:</p>
@@ -2335,7 +2531,7 @@ async fn main() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
 <code>TracingInfo</code> contains values that are the same in Scylla and Cassandra®.<br />
 If <code>TracingInfo</code> does not contain some needed value it's possible to query it manually from the tables
 <code>system_traces.sessions</code> and <code>system_traces.events</code></p>
-<h1 id="tracing-a-simpleprepared-query"><a class="header" href="#tracing-a-simpleprepared-query">Tracing a simple/prepared query</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tracing-a-simpleprepared-query"><a class="header" href="#tracing-a-simpleprepared-query">Tracing a simple/prepared query</a></h1>
 <p>Both <a href="tracing/../queries/simple.html">simple query</a> and <a href="tracing/../queries/prepared.html">prepared query</a>
 return a <code>QueryResult</code> which contains a <code>tracing_id</code> if tracing was enabled.</p>
 <h3 id="tracing-a-simple-query"><a class="header" href="#tracing-a-simple-query">Tracing a simple query</a></h3>
@@ -2402,7 +2598,7 @@ if let Some(id) = tracing_id {
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="tracing-a-batch-query"><a class="header" href="#tracing-a-batch-query">Tracing a batch query</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tracing-a-batch-query"><a class="header" href="#tracing-a-batch-query">Tracing a batch query</a></h1>
 <p><code>Session::batch</code> returns a <code>BatchResult</code> which contains a <code>tracing_id</code> if tracing was enabled.</p>
 <pre><pre class="playground"><code class="language-rust edition2018">
 <span class="boring">#![allow(unused)]
@@ -2436,7 +2632,7 @@ if let Some(id) = tracing_id {
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="tracing-a-paged-query"><a class="header" href="#tracing-a-paged-query">Tracing a paged query</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tracing-a-paged-query"><a class="header" href="#tracing-a-paged-query">Tracing a paged query</a></h1>
 <p>A paged query performs multiple simple/prepared queries to query subsequent pages.<br />
 If tracing is enabled the row iterator will contain a list of tracing ids for all performed queries.</p>
 <h3 id="tracing-sessionquery_iter"><a class="header" href="#tracing-sessionquery_iter">Tracing <code>Session::query_iter</code></a></h3>
@@ -2519,7 +2715,7 @@ for id in tracing_ids {
 </span><span class="boring">}
 </span><span class="boring">}
 </span></code></pre></pre>
-<h1 id="tracing-sessionprepare"><a class="header" href="#tracing-sessionprepare">Tracing <code>Session::prepare</code></a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tracing-sessionprepare"><a class="header" href="#tracing-sessionprepare">Tracing <code>Session::prepare</code></a></h1>
 <p><code>Session::prepare</code> prepares a query on all connections. If tracing is enabled for the <code>Query</code> to prepare, the resulting <code>PreparedStatement</code> will contain <code>prepare_tracing_ids</code>. <code>prepare_tracing_ids</code> is a list of tracing ids of prepare requests on all connections.</p>
 <pre><pre class="playground"><code class="language-rust edition2018">
 <span class="boring">#![allow(unused)]
@@ -2559,59 +2755,31 @@ for id in tracing_ids {
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
-
-                        
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
-
-                
             </nav>
 
         </div>
 
-        
-
-        
-
-        
-
-        
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        
-
-        
-
-        
         <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-
         <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        
-
-        
-        
         <script type="text/javascript">
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
         });
         </script>
-        
-        
-
     </body>
 </html>
